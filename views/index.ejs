@@ -1,0 +1,26 @@
+<%- include('partials/header') -%>
+
+<!-- logged in user ------------------------------------------------------------------>
+
+<% if (locals.isAuthenticated) { %>
+  
+  <span>
+  <% if (userProfile.picture) { %>
+    <img style="height: 50px; width: 50px;" src="<%= userProfile.picture %>" width="300">
+  <% } %>
+
+  <p>Welcome <%= userProfile.name %></p>
+ >
+
+</span>
+      
+<!--   if user not logged in --------------------------------------------->
+
+<% } else { %>
+
+    <p style="font-size: 20px;">You are not logged in. <a href="/login" class="underline">Login</a>.</p>
+    <img style="height: 570px; width: 1000px; padding-left:70px; padding-top: 10px;" src="https://www.thespruce.com/thmb/6ny5_DBa9On2LBLPkyA5vmi389A=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/what-does-rsvp-mean-on-invitations-1196806-Final1-5bfc2a754cedfd0026c0e46f-bb80a128235a4e5db4600d0efaf4b561.png" alt="">
+
+    <% } %>
+
+<%- include('partials/footer') -%>

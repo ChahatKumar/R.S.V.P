@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-200">
+<head>
+  <meta charset="UTF-8">
+  <title>R.S.V.P</title>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+  <link rel="shortcut icon" href="https://www.thespruce.com/thmb/6ny5_DBa9On2LBLPkyA5vmi389A=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/what-does-rsvp-mean-on-invitations-1196806-Final1-5bfc2a754cedfd0026c0e46f-bb80a128235a4e5db4600d0efaf4b561.png">
+</head>
+<body>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <img style="height:55px ;width: 45px ; padding-right: 20px;" src="https://www.thespruce.com/thmb/6ny5_DBa9On2LBLPkyA5vmi389A=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/what-does-rsvp-mean-on-invitations-1196806-Final1-5bfc2a754cedfd0026c0e46f-bb80a128235a4e5db4600d0efaf4b561.png">
+            <span class="font-semibold text-xl tracking-tight">R.S.V.P</span>
+        </div>
+
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Home</a>
+                <% if (locals.user) { %>
+                    <a  href="/profile" 
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Profile</a>
+                    <a  href="/logout" 
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Logout</a>
+                <% } else { %>
+                    <a  href="/login" 
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Login</a>
+                <% } %>
+            </div>
+
+          
+        </div>
+    </nav>
+    <div class="flex justify-center py-4">
+            <div class="w-5/6 lg:w-3/4 bg-white p-4 rounded overflow-hidden shadow-lg">
+                
