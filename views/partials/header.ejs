@@ -10,21 +10,20 @@
     <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
 
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img style="height:55px ;width: 45px ; padding-right: 20px;" src="https://www.thespruce.com/thmb/6ny5_DBa9On2LBLPkyA5vmi389A=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/what-does-rsvp-mean-on-invitations-1196806-Final1-5bfc2a754cedfd0026c0e46f-bb80a128235a4e5db4600d0efaf4b561.png">
-            <span class="font-semibold text-xl tracking-tight">R.S.V.P</span>
+            <img style="height:35px ;width: 75px ; padding-right: 20px; margin-left: 10px;" src="https://www.thespruce.com/thmb/6ny5_DBa9On2LBLPkyA5vmi389A=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/what-does-rsvp-mean-on-invitations-1196806-Final1-5bfc2a754cedfd0026c0e46f-bb80a128235a4e5db4600d0efaf4b561.png">
+            <div class="font-semibold text-xl tracking-tight"  style="font-size: 90 px;">R.S.V.P</div>
         </div>
 
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
-                <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Home</a>
-                <% if (locals.user) { %>
-                    <a  href="/profile" 
-                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Profile</a>
+                <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4" style="font-size: 18px; margin-left: 10px;">Home</a>
+                <% if (locals.isAuthenticated) { %>
+
                     <a  href="/logout" 
-                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Logout</a>
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4" style="font-size: 18px;margin-left: 10px; ">Logout</a>
                 <% } else { %>
                     <a  href="/login" 
-                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Login</a>
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4"  style="font-size: 18px;margin-left: 10px;">Login</a>
                 <% } %>
             </div>
 
